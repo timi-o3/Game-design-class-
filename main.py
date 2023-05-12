@@ -54,7 +54,7 @@ while  not_game_over:
         enemy_pos[1] = 0
 
     if detect_collision(player_pos, enemy_pos):
-        not_game_over= False
+        not_game_over = False
     pygame.draw.rect(screen, BLUE, (enemy_pos[0], enemy_pos[1], enemy_size, enemy_size))
     pygame.draw.rect(screen,RED,(player_pos[0],player_pos[1],player_size,player_size))
     clock.tick(20)
